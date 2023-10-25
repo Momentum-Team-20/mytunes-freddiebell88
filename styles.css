@@ -1,0 +1,122 @@
+* {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Signika', sans-serif;
+    background-color: rgb(133, 25, 21);
+    color: white;
+    box-sizing: border-box;
+}
+#mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30vh;
+}
+h1 {
+    text-align: center;
+}
+
+/* adding tagline to header */
+h1::after {
+    content:"find your jam";
+    color: rgb(158, 43, 224);
+    font-style: oblique;
+    font-size: smaller;
+}
+
+audio {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75vw
+}
+
+#searchForm {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+input[type=text] {
+    margin: 0 1rem;
+    border: 0;
+    box-shadow: 2px 2px 5px rgb(158, 43, 224);
+    border-radius: 10px;
+    width: 50vw;
+    font-family: inherit;
+}
+
+button[type=submit] {
+    appearance: none;
+    border: 0;
+    box-shadow: 2px 2px 10px rgb(158, 43, 224);
+    border-radius: 10px;
+    width: 12%;
+    font-style: oblique;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 1rem;
+    
+}
+#searchResults {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px
+}
+
+.songBox {
+    border-radius: 10px;
+    background-color: rgb(12, 108, 192);
+    width: 125px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* truncate long text and then make it visible when user mouses over */
+.songBoxText {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 120px;
+    padding: 0% 5%;
+    text-overflow: ellipsis;
+}
+
+.songBoxText:hover {
+    overflow: visible;
+    white-space: normal;
+}
+
+.cover {
+    margin: 10%;
+}
+
+.artistName {
+    font-style: italic;
+} 
+
+.songName {
+    font-size: 14px;
+}
+
+.albumName {
+    font-size: 14px;
+}
+
+.playButton {
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 5px 37% 30%;
+    width: 30px;
+    height: 30px;
+    border: 1;
+    border-radius: 50%;
+    background-color: rgb(158, 43, 224);
+    
+}
+
+#nowPlaying {
+    text-align: center;
+}
+

@@ -3,9 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Signika:wght@300&display=swap" rel="stylesheet">
   <script src="main.js" defer></script>
-  <title>Music Search</title>
+  <link rel="stylesheet" href="styles.css">
+  <title>FRESH Music Search</title>
 </head>
 <body>
+<div id="mainContainer">
+  <header>
+    <h1>FRESH</h1>
+  </header>
+  <div id="audioBox">
+    <audio controls src=""></audio>
+  </div>
+  <div id="nowPlaying"></div>
+  <form id="searchForm">
+    
+      <input type="text" id="searchInput" name="searchInput" placeholder="What do you want to listen to?">
+    
+    <button id="searchButton" type="submit">Let's Jam</button>
+  </form>
+</div>
+  <h2></h2>
+  <div id="searchResults"></div>
 </body>
 </html>
